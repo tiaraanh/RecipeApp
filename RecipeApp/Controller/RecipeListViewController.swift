@@ -38,7 +38,7 @@ class RecipeListViewController: UIViewController, UITableViewDataSource, UITable
         tableView.dataSource = self
         tableView.delegate = self
         
-        navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .done, target: self, action: nil)
+        
         
     }
     
@@ -57,7 +57,7 @@ class RecipeListViewController: UIViewController, UITableViewDataSource, UITable
         cell.timeLabel.text = recipe.prepTime
         cell.thumbImageView.image = UIImage(named: recipe.thumbnails)
         
-        
+        navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .done, target: self, action: nil)
         
         return cell
     }
